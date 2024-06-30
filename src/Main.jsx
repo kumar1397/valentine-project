@@ -14,9 +14,9 @@ export default function  Main (){
             setTitle(title + 1);
         }
         console.log(title);
-        setHeight(height + 5);
-        setWidth(width + 5)
-        setText(text + 5);
+        setHeight(height + 10);
+        setWidth(width + 10)
+        setText(text + 10);
     };
     const Navigate = useNavigate();
     const handleButton = () =>{
