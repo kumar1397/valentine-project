@@ -30,13 +30,13 @@ export default function Main() {
                     <div className='text-[36px] font-medium text-black font-mono'>Will you be my valentine??</div>
 
                 </div>
-                <div className="w-full h-[50vh] flex flex-row gap-6 items-center justify-between text-[40px] font-semibold ">
-                    <button onClick={handleButton} className={`bg-green-400 text-white rounded-xl z-10 ml-10 mr-10`} style={{ height: `${height * 4}px`, width: `${width * 4}px`, fontSize: `${text}px` }}>YES</button>
-                    <button onClick={handleClick} className={`bg-red-400 text-white h-40 w-56 fixed right-10 bottom-36 rounded-xl`}>{data[title].name}</button>
+                <div className="w-full h-[50vh] flex flex-row gap-6 items-end justify-between text-[36px] font-semibold ">
+                    <button onClick={handleButton} className={`bg-green-400 text-white rounded-xl z-10 fixed ${title < 1 ?'left-10 bottom-10' : ''} max-h-screen`} style={{ height: `${height * 4}px`, width: `${width * 4}px`, fontSize: `${text}px` }}>YES</button>
+                    <button onClick={handleClick} className={`bg-red-400 text-white h-40 w-56 fixed right-10 bottom-10 rounded-xl`}>{data[title].name}</button>
                 </div>
             </div>
             <div className={`flex flex-col justify-center items-center ${hide ? 'flex' : 'hidden'}`}>
-                <img src="https://media1.tenor.com/images/43d629baac93871acb0c6459d791d766/tenor.gif?itemid=16517349" alt="" className="h-[50vh]" />
+                <img src="https://media1.tenor.com/images/43d629baac93871acb0c6459d791d766/tenor.gif?itemid=16517349" alt="gif" className="h-[50vh]" />
                 <div className="w-full h-[50vh] text-3xl font-bold flex justify-center">Yay!!!!</div>
 
             </div>
